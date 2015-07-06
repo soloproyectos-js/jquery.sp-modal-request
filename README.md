@@ -1,2 +1,2 @@
 # jquery.sp-modal-request
-A Modal Request library for jQuery
+A Modal Request plugin for jQuery
