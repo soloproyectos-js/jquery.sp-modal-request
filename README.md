@@ -28,3 +28,5 @@ $.spModalRequest('get', 'test.php', {param1: 'one', param2: 'two'})
         console.log('This function is always called');
     });
 ```
+
+See `demos/modal-request` for a complete example.
