@@ -18,7 +18,7 @@
      * 
      * Example:
      * ```JavaScript
-     * var req = new $.spModalRequestPost('test.php');
+     * var req = new $.spModalRequestPostClass('test.php');
      * var obj = req.send();
      * obj.always(function () {
      *     console.log('This function is always executed, even when the request fails.');
@@ -33,11 +33,11 @@
      * @param {Object} data   Parameters (not required)
      * @param {String} type   Expected document type (not required)
      * 
-     * @extends {$.spModalRequestBase}
+     * @extends {$.spModalRequestClass}
      */
-    $.spModalRequestPost = function (url, data, type) {
+    $.spModalRequestPostClass = function (url, data, type) {
         // calls the parent constructor
-        $.spModalRequestBase.call(this, 'post', url, data, type);
+        $.spModalRequestClass.call(this, 'post', url, data, type);
     };
-    $.spModalRequestPost.prototype = Object.create($.spModalRequestBase.prototype);
+    $.spModalRequestPostClass.prototype = Object.create($.spModalRequestClass.prototype);
 })(jQuery);

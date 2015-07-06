@@ -7,9 +7,9 @@ rm -rf dist/*
 
 # compresses JavaScript files
 cat \
-    src/jquery.sp-modal-request-base.js \
-    src/jquery.sp-modal-request-get.js \
-    src/jquery.sp-modal-request-post.js \
+    src/jquery.sp-modal-request-class.js \
+    src/jquery.sp-modal-request-get-class.js \
+    src/jquery.sp-modal-request-post-class.js \
     src/jquery.sp-modal-request.js \
 | uglifyjs \
     --compress \

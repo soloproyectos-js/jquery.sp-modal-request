@@ -18,7 +18,7 @@
      * @param {Object} data   Parameters (not required)
      * @param {String} type   Expected document type (not required)
      */
-    $.spModalRequestBase = function (method, url, data, type) {
+    $.spModalRequestClass = function (method, url, data, type) {
         if ($.inArray(method, ['get', 'post']) < 0) {
             $.error('Method not allowed: ' + method);
         }
@@ -35,32 +35,32 @@
      * This method can be either 'get' or 'post'
      * @var {String}
      */
-    $.spModalRequestBase.prototype._method = null;
+    $.spModalRequestClass.prototype._method = null;
     
     /**
      * URL.
      * @var {String}
      */
-    $.spModalRequestBase.prototype._url = "";
+    $.spModalRequestClass.prototype._url = "";
     
     /**
      * Parametes.
      * @var {Object}
      */
-    $.spModalRequestBase.prototype._data = {};
+    $.spModalRequestClass.prototype._data = {};
     
     /**
      * Expected document type.
      * @var {String}
      */
-    $.spModalRequestBase.prototype._type = "";
+    $.spModalRequestClass.prototype._type = "";
     
     /**
      * Sends an HTTP request.
      * 
      * @return {jQuery.Promise}
      */
-    $.spModalRequestBase.prototype.send = function () {
+    $.spModalRequestClass.prototype.send = function () {
         var ret = new $.Deferred();
         var req = null;
 

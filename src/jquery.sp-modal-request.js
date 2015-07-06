@@ -36,9 +36,9 @@
             // as we can't use the .apply() method in conjunction with the 'new' operator
             // http://goo.gl/PRL0eZ (redirects to http://stackoverflow.com)
             function F(args) {
-                return $.spModalRequestGet.apply(this, args);
+                return $.spModalRequestGetClass.apply(this, args);
             }
-            F.prototype = $.spModalRequestGet.prototype;
+            F.prototype = $.spModalRequestGetClass.prototype;
             
             var req = new F(arguments);
             return req.send();
@@ -70,9 +70,9 @@
             // as we can't use the .apply() method in conjunction with the 'new' operator
             // http://goo.gl/PRL0eZ (redirects to http://stackoverflow.com)
             function F(args) {
-                return $.spModalRequestPost.apply(this, args);
+                return $.spModalRequestPostClass.apply(this, args);
             }
-            F.prototype = $.spModalRequestPost.prototype;
+            F.prototype = $.spModalRequestPostClass.prototype;
             
             var req = new F(arguments);
             return req.send();
