@@ -12,7 +12,7 @@ bower install jquery.sp-modal-request
 
 Or copy the `dist/` files in your preferred location.
 
-## Basic Example
+## Basic Usage
 
 Each time you perform an HTTP request a modal loading appears and it is closed when the request is complete. Available methods are `get` and `post`.
 
