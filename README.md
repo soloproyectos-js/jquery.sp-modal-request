@@ -1,5 +1,18 @@
-# jquery.sp-modal-request
-A Modal Request plugin for jQuery
+# jQuery.spModalRequest
+
+A Modal Request plugin for jQuery.
+
+## Install
+
+Using [bower](http://bower.io/) package manager:
+
+```bash
+bower install jquery.sp-modal-request
+```
+
+Or copy the `dist/` files in your preferred location.
+
+## Basic Example
 
 Each time you perform an HTTP request a modal loading appears and it is closed when the request is complete. Available methods are `get` and `post`.
 
