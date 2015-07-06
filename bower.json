@@ -1,0 +1,25 @@
+{
+  "name": "jquery.sp-modal-request",
+  "version": "0.1.0",
+  "homepage": "https://github.com/soloproyectos-js/jquery.sp-modal-request",
+  "authors": [
+    "Gonzalo Chumillas <gchumillas@email.com>"
+  ],
+  "description": "A Modal Request plugin for jQuery.",
+  "main": "dist/jquery.sp-modal-request.min.js",
+  "keywords": [
+    "jquery",
+    "modal",
+    "request"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "vendor",
+    "test"
+  ],
+  "dependencies": {
+    "jquery": "~2.0",
+    "jquery.sp-modal": "latest"
+  }
+}
