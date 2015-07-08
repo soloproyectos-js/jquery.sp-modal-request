@@ -91,15 +91,13 @@
                 message = 'The document is not well formed';
             }
             
-            $.spModal('error', title, message, function () {
-                // aligns the text to the left if there are more than two lines
-                var count = (message.match(/\n/g) || []).length;
-                if (count > 1) {
-                    this.setTextAlign('left');
-                }
-                
+            // shows an error message and rejects the request
+            var msg = $.spModal('message', title, message);
+            msg.addButton('Accept', function () {
                 ret.reject(xhr, status);
+                msg.close();
             });
+            $.error(message);
         });
 
         return ret.promise();
