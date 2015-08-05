@@ -31,6 +31,16 @@
     };
     
     /**
+     * Labels.
+     * @var {Object}
+     */
+    $.spModalRequestClass.prototype.labels = {
+        dialog: {
+            accept: 'Accept'
+        }
+    };
+    
+    /**
      * Reqest method.
      * This method can be either 'get' or 'post'
      * @var {String}
@@ -61,6 +71,7 @@
      * @return {jQuery.Promise}
      */
     $.spModalRequestClass.prototype.send = function () {
+        var self = this;
         var ret = new $.Deferred();
         var req = null;
 
@@ -93,7 +104,7 @@
             
             // shows an error message and rejects the request
             var msg = $.spModal('message', title, message);
-            msg.addButton('Accept', function () {
+            msg.addButton(self.labels.dialog.accept, function () {
                 ret.reject(xhr, status);
                 msg.close();
             });
