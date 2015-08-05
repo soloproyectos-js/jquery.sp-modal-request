@@ -14,5 +14,5 @@ cat \
 | uglifyjs \
     --compress \
     --mangle \
-    --preamble "/*! jQuery.spModalRequest v0.1.0 | Copyright (c) 2015 Gonzalo Chumillas | https://github.com/soloproyectos-js/jquery.sp-modal-request/blob/master/LICENSE */" \
+    --preamble "/*! jQuery.spModalRequest v0.1.1 | Copyright (c) 2015 Gonzalo Chumillas | https://github.com/soloproyectos-js/jquery.sp-modal-request/blob/master/LICENSE */" \
     -o dist/jquery.sp-modal-request.min.js
