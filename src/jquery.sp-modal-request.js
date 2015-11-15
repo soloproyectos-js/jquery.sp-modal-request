@@ -4,9 +4,9 @@
  * This plugin requires: 
  *      1. jQuery >= 2.1.3
  *
- * @author    Gonzalo Chumillas <gchumillas@email.com>
- * @license   https://github.com/soloproyectos/jquery.modal-request/blob/master/LICENSE MIT License
- * @link      https://github.com/soloproyectos/jquery.modal-request
+ * @author  Gonzalo Chumillas <gchumillas@email.com>
+ * @license https://github.com/soloproyectos/jquery.modal-request/blob/master/LICENSE MIT License
+ * @link    https://github.com/soloproyectos/jquery.modal-request
  */
 (function ($) {
     var methods = {
